@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 589872094}
   - component: {fileID: 589872093}
   - component: {fileID: 589872092}
+  - component: {fileID: 589872091}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -432,6 +433,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &589872091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589872090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9488db752697ac04aac1434cfffcaab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 1142865740}
+  playerHealth: {fileID: 1895822526}
+  scoreText: {fileID: 1029537521}
 --- !u!114 &589872092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,7 +1074,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1097,7 +1113,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248821707
 MonoBehaviour:
@@ -1214,6 +1230,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325417572}
   m_CullTransparentMesh: 1
+--- !u!114 &1895822526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3005095620657558478, guid: 09b79165dd08627409bd32682a16c396, type: 3}
+  m_PrefabInstance: {fileID: 2606970837534201178}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5766316de7b2b14da317afba72c5d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1932489710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,8 +1349,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2098402939
 GameObject:
